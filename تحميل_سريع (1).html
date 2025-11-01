@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل تطبيق فك وتعديل تطبيقات الأندرويد</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .download-btn {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .file-info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .version-info {
+            font-size: 0.9em;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+
+        .success-message {
+            background: linear-gradient(45deg, #00b894, #00cec9);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .copy-btn {
+            background: linear-gradient(45deg, #6c5ce7, #a29bfe);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 تحميل التطبيق</h1>
+        <p class="subtitle">تطبيق فك وتعديل تطبيقات الأندرويد - النسخة الكاملة</p>
+        
+        <div class="success-message">
+            ✅ تم تحويل التطبيق بنجاح إلى ملف تنفيذي مستقل
+        </div>
+
+        <div class="file-info">
+            <h3>📁 معلومات الملف</h3>
+            <p><strong>اسم الملف:</strong> AndroidReverseTool_EXE_Final.tar.gz</p>
+            <p><strong>الحجم:</strong> 21 ميجابايت</p>
+            <p><strong>النوع:</strong> ملف مضغوط يحتوي التطبيق الكامل</p>
+            <div class="version-info">
+                <strong>الإصدار:</strong> 1.0.0 | <strong>التاريخ:</strong> 2 نوفمبر 2025
+            </div>
+        </div>
+
+        <a href="AndroidReverseTool_EXE_Final.tar.gz" class="download-btn" download>
+            📥 تحميل التطبيق (21 MB)
+        </a>
+
+        <div style="margin-top: 30px;">
+            <h3>📋 روابط إضافية:</h3>
+            <a href="index.html" class="download-btn">📄 صفحة كاملة</a>
+            <a href="تحميل_تطبيق_فك_وتعديل_تطبيقات_الاندرويد.html" class="download-btn">📖 دليل مفصل</a>
+        </div>
+
+        <div style="margin-top: 30px; font-size: 0.9em; opacity: 0.8;">
+            <p><strong>ملاحظة:</strong> يجب فك ضغط الملف المضغوط بعد التحميل قبل الاستخدام</p>
+            <p><strong>متوافق مع:</strong> Windows 7, 8, 10, 11</p>
+        </div>
+    </div>
+
+    <script>
+        // إضافة تأثيرات تفاعلية
+        document.querySelectorAll('.download-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+        });
+
+        // رسائل تأكيد التحميل
+        document.querySelectorAll('a[download]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                setTimeout(() => {
+                    alert('✅ تم بدء التحميل بنجاح!\n\n💡 تأكد من فك ضغط الملف بعد التحميل');
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>
